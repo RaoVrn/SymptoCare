@@ -55,9 +55,6 @@ _Insert screenshots of your application here._
 
 Contributions to SymptoCare are welcome! If you have any ideas for improvements, find bugs, or wish to add new features, please feel free to open an issue or submit a pull request. Your contributions help make SymptoCare better for everyone.
 
-## Credits
-
-This project was developed by [Your Name]. Special thanks to Varun Prakash for the frontend template.
 
 ## License
 
