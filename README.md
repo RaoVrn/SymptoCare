@@ -49,8 +49,8 @@ To run SymptoCare locally, follow these steps:
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/RaoVrn/SymptoCare/tree/main/screenshots/landingpage.png?raw=1)
-![Screenshot 2](https://github.com/RaoVrn/SymptoCare/tree/main/screenshots/frontpage.png?raw=1)
+![Screenshot 1](screenshots/frontpage.png?raw=1)
+![Screenshot 2](https://github.com/RaoVrn/SymptoCare/screenshots/frontpage.png?raw=1)
 ![Screenshot 3](https://github.com/RaoVrn/SymptoCare/tree/main/screenshots/result.png?raw=1)
 
 ## Contribution
