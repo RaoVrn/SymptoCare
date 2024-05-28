@@ -49,9 +49,10 @@ To run SymptoCare locally, follow these steps:
 
 ## Screenshots
 
-![Screenshot 1](screenshots/landingpage.png?raw=1){: width="200px" height="200px"}
-![Screenshot 2](screenshots/frontpage.png?raw=1){: width="200px" height="200px"}
-![Screenshot 3](screenshots/results.png?raw=1){: width="200px" height="200px"}
+<img src="screenshots/landingpage.png" width="200" height="200">
+<img src="screenshots/frontpage.png" width="200" height="200">
+<img src="screenshots/results" width="200" height="200">
+
 
 
 ## Contribution
