@@ -49,7 +49,9 @@ To run SymptoCare locally, follow these steps:
 
 ## Screenshots
 
-_Insert screenshots of your application here._
+![Screenshot 1](https://www.dropbox.com/s/example/landingpage.png?raw=1)
+![Screenshot 2](https://www.dropbox.com/s/example/frontpage.png?raw=1)
+![Screenshot 3](https://www.dropbox.com/s/example/result.png?raw=1)
 
 ## Contribution
 
