@@ -39,26 +39,51 @@ To run SymptoCare locally, follow these steps:
     pip install -r requirements.txt
     ```
 
-4. Run the Flask application:
+4. **Troubleshooting Dependencies**:
+    If you encounter issues with installing `Werkzeug` or other dependencies, ensure that you have compatible versions of Flask and Werkzeug. Follow these steps to resolve common issues:
+
+    - Update Flask and Werkzeug to the latest compatible versions:
+      ```bash
+      pip install --upgrade flask werkzeug
+      ```
+
+    - If you face a specific error regarding `url_quote`, modify your code to use `quote` instead:
+      ```python
+      # Change this line in your code:
+      from werkzeug.urls import url_quote
+      # To this:
+      from werkzeug.urls import quote as url_quote
+      ```
+
+    - Ensure all dependencies are correctly installed and up-to-date:
+      ```bash
+      pip install --upgrade -r requirements.txt
+      ```
+
+    - If you encounter a dependency conflict error, uninstall the conflicting packages and reinstall them:
+      ```bash
+      pip uninstall flask werkzeug
+      pip install flask werkzeug
+      ```
+
+5. Run the Flask application:
 
     ```bash
     python app.py
     ```
 
-5. Open your web browser and go to `http://localhost:5000` to access SymptoCare.
+6. Open your web browser and go to `http://localhost:5000` to access SymptoCare.
 
 ## Screenshots
 
-<img src="screenshots/landing.png" width="550" height="300">
-<img src="screenshots/front.png" width="550" height="300">
-<img src="screenshots/result.png" width="550" height="300">
+<img src="landing.png" width="550" height="300">
+<img src="front.png" width="550" height="300">
+<img src="result.png" width="550" height="300">
 
 ## Contribution
 
 Contributions to SymptoCare are welcome! If you have any ideas for improvements, find bugs, or wish to add new features, please feel free to open an issue or submit a pull request. Your contributions help make SymptoCare better for everyone.
 
-
 ## License
 
 SymptoCare is licensed under the [MIT License](LICENSE). You are free to modify and distribute the application as per the terms of the license.
-
