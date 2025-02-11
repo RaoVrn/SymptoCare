@@ -3,64 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results</title>
+    <title>Results - SymptoCare</title>
     <style>
+        :root {
+            --primary-color: #0A74DA;
+            --secondary-color: #ffffff;
+            --bg-gradient-start: #eef2f3;
+            --bg-gradient-end: #8e9eab;
+            --text-color: #333333;
+            --accent-color: #00aaff;
+        }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: var(--primary-color);
+            padding: 30px;
+            text-align: center;
+            color: #ffffff;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #ffffff;
+            width: 90%;
+            max-width: 1000px;
+            background-color: var(--secondary-color);
+            margin: 40px auto;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #007bff;
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
+            margin: 0;
+            font-size: 32px;
         }
         h2 {
-            color: #333;
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 24px;
-            text-transform: uppercase;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            text-align: center;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: var(--accent-color);
         }
         ul {
             list-style-type: none;
             padding: 0;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         ul li {
-            margin-bottom: 10px;
-            padding-left: 20px;
+            padding: 8px 0;
+            font-size: 16px;
+            border-bottom: 1px solid #f0f0f0;
             position: relative;
-            font-size: 18px;
-            color: #555;
+            padding-left: 25px;
         }
         ul li::before {
             content: "\2022";
-            color: #007bff;
             position: absolute;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 20px;
-        }
-        .medicines-list {
-            padding-left: 40px;
+            color: var(--accent-color);
+            font-size: 18px;
         }
         .medicines-list li {
-            font-size: 16px;
-            color: #777;
+            font-size: 15px;
+            padding-left: 20px;
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #777777;
         }
     </style>
 </head>
@@ -69,7 +94,6 @@
         <h1>Health Conditions & Treatments</h1>
     </header>
     <div class="container">
-        <!-- Display diseases -->
         <h2>Diseases Detected:</h2>
         <ul>
             {% for disease in diseases %}
@@ -77,9 +101,7 @@
             {% endfor %}
         </ul>
     </div>
-
     <div class="container">
-        <!-- Display medicines -->
         <h2>Suggested Medicines:</h2>
         {% for disease, meds in medicines.items() %}
             <h3>{{ disease }}</h3>
@@ -90,5 +112,8 @@
             </ul>
         {% endfor %}
     </div>
+    <footer>
+        <p>Created with 💝</p>
+    </footer>
 </body>
 </html>
